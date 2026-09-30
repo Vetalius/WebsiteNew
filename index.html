@@ -1,0 +1,594 @@
+
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WEXA | Soodsad laadimisjaamad</title>
+  <meta name="description" content="WEXA - Nutikas elektriautode laadimislahendus korterühistutele. Automaatne arveldus ja koormuse juhtimine.">
+  <link rel="icon" type="image/png" href="favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=25">
+<meta property="og:title" content="WEXA | Nutikas laadimislahendus kortermajadele">
+<meta property="og:description" content="Kontrollitud elektriautode laadimine korteriühistutele. Lihtne, õiglane ja tasuv.">
+<meta property="og:url" content="https://wexa.ee">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://wexa.ee/ground-charger-1.webp">
+
+<!-- Structured Data (Schema.org) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Wexa Technologies OÜ",
+  "url": "https://wexa.ee",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Sepise 1",
+    "addressLocality": "Tallinn",
+    "postalCode": "11415",
+    "addressCountry": "EE"
+  },
+  "telephone": "+37258666199",
+  "email": "info@wexa.ee",
+  "description": "Nutikas elektriautode laadimislahendus kortermajadele"
+}
+</script>
+</head>
+<body>
+
+<a href="#main-content" class="skip-link" data-key="skip_link">Liigu sisu juurde</a>
+
+<!-- Scroll progress -->
+<div id="scroll-progress" aria-hidden="true"></div>
+
+<!-- Ambient background -->
+<div class="site-grid" aria-hidden="true"></div>
+<div class="noise-overlay" aria-hidden="true"></div>
+
+<div class="nav-backdrop" id="nav-backdrop" hidden></div>
+
+<header id="header">
+  <nav aria-label="Peamenüü">
+    <a href="#home" class="logo">
+      <img src="wexa%20final%20logo.png" alt="WEXA" height="38" width="120">
+    </a>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="nav-links" role="navigation">
+      <a href="#home" data-key="nav_home">Avaleht</a>
+      <a href="#solution" data-key="nav_solution">Lahendus</a>
+      <a href="#howwork" data-key="nav_how">Kuidas töötab</a>
+      <a href="#calculator" data-key="nav_calculator">Tasuvus</a>
+      <a href="#contact" data-key="nav_contact">Kontakt</a>
+    </div>
+    <div class="lang-switcher" role="group" aria-label="Language">
+      <button class="lang-btn active" data-lang="et" aria-pressed="true">ET</button>
+      <button class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+      <button class="lang-btn" data-lang="ru" aria-pressed="false">RU</button>
+    </div>
+  </nav>
+</header>
+
+<main id="main-content">
+
+  <!-- ── HERO ────────────────────────────────────────── -->
+  <section class="hero" id="home">
+    <div class="video-background">
+      <video autoplay muted loop playsinline poster="fallback-image.jpg" preload="metadata">
+        <source src="car-charger.mp4" type="video/mp4">
+      </video>
+      <div class="video-overlay"></div>
+    </div>
+
+    <div class="hero-shell">
+      <div class="hero-content reveal">
+        <p class="hero-brand">WEXA</p>
+        <h1 data-key="hero_h1">
+          Nutikas <span class="hero-accent">energialahendus</span> kortermajadele.
+        </h1>
+        <p class="lead" data-key="hero_lead">
+          Kontrollitud elektriautode laadimine korteriühistutele — ilma suure investeeringu ja keeruka halduseta.
+        </p>
+        <div class="hero-cta-group">
+          <a href="#configurator" class="btn btn-primary">
+            <span data-key="hero_btn">Loo oma lahendus</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#calculator" class="btn btn-ghost" data-key="hero_cta_secondary">
+            Arvuta tasuvus
+          </a>
+        </div>
+      </div>
+
+      <a href="#whydontwork" class="scroll-indicator" data-aria-key="scroll_indicator_aria" aria-label="Keri alla">
+        <span class="scroll-line" aria-hidden="true"></span>
+        <span data-key="scroll_indicator">Keri alla</span>
+      </a>
+    </div>
+  </section>
+
+  <div class="sep"></div>
+
+  <!-- ── WHY SECTION ─────────────────────────────────── -->
+  <section id="whydontwork" class="reveal">
+    <div class="section-head">
+      <div class="section-eyebrow" data-key="why_eyebrow">Probleem</div>
+      <h2 data-key="reason-section-title" class="section-title">
+        Miks tavalised lahendused sageli<br><span class="hero-accent">ei tööta</span>?
+      </h2>
+    </div>
+    <div class="grid feature-grid stagger">
+      <div class="card feature-card">
+        <div class="card-number">01</div>
+        <span class="card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 17h4l2-7 3 12 2-8h7"/><path d="M17 7V3h4"/></svg>
+        </span>
+        <h3 data-key="why_card1_h">Suured alginvesteeringud</h3>
+        <p data-key="why_card1_p">Traditsioonilised laadimislahendused nõuavad suuri eelinvesteeringuid ja keerukaid elektrisüsteemi ümberkorraldusi.</p>
+      </div>
+      <div class="card feature-card">
+        <div class="card-number">02</div>
+        <span class="card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        </span>
+        <h3 data-key="why_card2_h">Keerukas haldamine</h3>
+        <p data-key="why_card2_p">Laadimiste arvestus, arvete koostamine ja süsteemi hooldus võtab palju aega ja ressursse.</p>
+      </div>
+      <div class="card feature-card">
+        <div class="card-number">03</div>
+        <span class="card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 14c0 2.2 1.8 4 4 4s4-1.8 4-4"/><path d="M7 10V8a5 5 0 0 1 10 0v2"/><rect x="5" y="10" width="14" height="10" rx="2"/></svg>
+        </span>
+        <h3 data-key="why_card3_h">Ebaõiglane jagamine</h3>
+        <p data-key="why_card3_p">Kõik elanikud panustavad ühiselt, aga kasutavad vaid mõned. See ei ole õiglane lahendus.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="sep"></div>
+
+  <!-- ── SOLUTION SECTION ────────────────────────────── -->
+  <section id="solution" class="reveal">
+    <div class="section-head">
+      <div class="section-eyebrow" data-key="solution_eyebrow">WEXA lahendus</div>
+      <h2 data-key="wexa-heading" class="section-title">
+        Turvaline ja <span class="hero-accent">nutikas</span>
+      </h2>
+    </div>
+    <div class="grid solution-grid stagger">
+      <div class="card feature-card">
+        <div class="card-number">01</div>
+        <span class="card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l8 4v5c0 5-3.5 8.5-8 9-4.5-.5-8-4-8-9V7l8-4z"/></svg>
+        </span>
+        <h4 data-key="sol_card1_h">Teraskorpus</h4>
+        <p data-key="sol_card1_p">Kogu laadimissüsteem on turvaliselt kapis. Lihtne 230V ja/või 400V ühendus, sobib igale majale.</p>
+      </div>
+      <div class="card feature-card">
+        <div class="card-number">02</div>
+        <span class="card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg>
+        </span>
+        <h4 data-key="sol_card2_h">Juhtimine mobiiliäpiga</h4>
+        <p data-key="sol_card2_p">Elanikud kasutavad süsteemi läbi mobiiliäpi. Automaatne tarbimise ja kulu arvestus.</p>
+      </div>
+      <div class="card feature-card">
+        <div class="card-number">03</div>
+        <span class="card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 19V5"/><path d="M4 19h16"/><path d="M8 15l3-4 3 2 4-6"/></svg>
+        </span>
+        <h4 data-key="sol_card3_h">Läbipaistev ja õiglane</h4>
+        <p data-key="sol_card3_p">Elektrienergia tarbimine arvestatakse täpselt ja korteripõhiselt. Kõik kulud kajastatakse läbipaistvalt kommunaalarvetel.</p>
+      </div>
+      <div class="card feature-card">
+        <div class="card-number">04</div>
+        <span class="card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 12h4l2-6 3 12 2-6h7"/></svg>
+        </span>
+        <h4 data-key="sol_card4_h">Reaalajas jälgimine</h4>
+        <p data-key="sol_card4_p">Süsteem jälgib tarbimist ja koormust automaatselt, võimaldades ühistul lihtsalt planeerida energiakasutust.</p>
+      </div>
+    </div>
+    <div class="promo-images-container">
+      <button type="button" class="promo-img-btn promo-img-btn--lg" data-full-src="ground-charger-1.jpeg" data-aria-key="lightbox_open" aria-label="Ava suurem foto">
+        <img src="ground-charger-1.webp" alt="WEXA maas laadimisjaam parklas" data-key="gallery_img1_alt" class="promo-img" loading="lazy">
+        <span class="promo-img-veil" aria-hidden="true"></span>
+        <span class="promo-img-zoom" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg>
+        </span>
+      </button>
+      <button type="button" class="promo-img-btn" data-full-src="ground-charger-2.jpeg" data-aria-key="lightbox_open" aria-label="Ava suurem foto">
+        <img src="ground-charger-2.webp" alt="WEXA maas laadimisjaam detailvaade" data-key="gallery_img2_alt" class="promo-img" loading="lazy">
+        <span class="promo-img-veil" aria-hidden="true"></span>
+        <span class="promo-img-zoom" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg>
+        </span>
+      </button>
+      <button type="button" class="promo-img-btn" data-full-src="wexa wall.png" data-aria-key="lightbox_open" aria-label="Ava suurem foto">
+        <img src="wexa-wall.webp" alt="WEXA seinamoodul kortermaja parklas" data-key="gallery_img3_alt" class="promo-img" loading="lazy">
+        <span class="promo-img-veil" aria-hidden="true"></span>
+        <span class="promo-img-zoom" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg>
+        </span>
+      </button>
+    </div>
+  </section>
+
+  <div class="sep"></div>
+
+  <!-- ── HOW IT WORKS ────────────────────────────────── -->
+  <section id="howwork" class="reveal">
+    <div class="section-head">
+      <div class="section-eyebrow" data-key="how_eyebrow">Protsess</div>
+      <h2 data-key="how_it_works_title" class="section-title">
+        Kuidas <span class="hero-accent">Wexa töötab</span>?
+      </h2>
+    </div>
+    <ol class="steps stagger">
+      <li class="step">
+        <span class="step-index">01</span>
+        <div class="step-body">
+          <h4 data-key="how_step1_h">Paigaldamine</h4>
+          <p data-key="how_step1_p">Paigaldame süsteemi teie parklasse läbimõeldult ja efektiivselt.</p>
+        </div>
+      </li>
+      <li class="step">
+        <span class="step-index">02</span>
+        <div class="step-body">
+          <h4 data-key="how_step2_h">Seadistamine</h4>
+          <p data-key="how_step2_p">Seadistame süsteemi vastavalt teie maja võimsusele ja vajadustele.</p>
+        </div>
+      </li>
+      <li class="step">
+        <span class="step-index">03</span>
+        <div class="step-body">
+          <h4 data-key="how_step3_h">Kasutamine</h4>
+          <p data-key="how_step3_p">Laadimine toimub mobiiliäpi kaudu ning kulud registreeritakse automaatselt.</p>
+        </div>
+      </li>
+      <li class="step">
+        <span class="step-index">04</span>
+        <div class="step-body">
+          <h4 data-key="how_step4_h">Haldamine</h4>
+          <p data-key="how_step4_p">Korteriühistu lisab kulud kommunaalarvetele, kasutajad näevad kogu ülevaadet läbi mobiiliäpi.</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <div class="sep"></div>
+
+  <!-- ── LOAD MANAGEMENT ─────────────────────────────── -->
+  <section id="loadcont" class="reveal">
+    <div class="section-head">
+      <div class="section-eyebrow" data-key="load_eyebrow">Tehniline eelis</div>
+      <h2 data-key="load_management_title" class="section-title">
+        Koormuse <span class="hero-accent">juhtimine</span>
+      </h2>
+      <p data-key="wexa_system_description" class="section-lead">
+        WEXA süsteem jälgib elektritarbimist reaalajas ja jaotab koormused automaatselt, et:
+      </p>
+    </div>
+    <div class="grid load-grid stagger">
+      <div class="load-point">
+        <span class="load-mark" aria-hidden="true"></span>
+        <p data-key="load_point1">vältida ülekoormust ja elektrisüsteemi kahjustusi</p>
+      </div>
+      <div class="load-point">
+        <span class="load-mark" aria-hidden="true"></span>
+        <p data-key="load_point2">tagada seadmete turvalise ja tõhusa kasutamise</p>
+      </div>
+      <div class="load-point">
+        <span class="load-mark" aria-hidden="true"></span>
+        <p data-key="load_point3">lihtsustada energiakasutuse planeerimist</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="sep"></div>
+
+  <!-- ── FACTS ───────────────────────────────────────── -->
+  <section id="facts" class="reveal">
+    <div class="section-head">
+      <div class="section-eyebrow" data-key="facts_eyebrow">Andmed</div>
+      <h2 data-key="facts_numbers_title" class="section-title">
+        Faktid ja <span class="hero-accent">numbrid</span>
+      </h2>
+      <p data-key="wexa_necessity_text" class="section-lead">Miks WEXA lahendus on Eestis vajalik?</p>
+    </div>
+    <div class="facts-grid stagger">
+      <div class="fact-card">
+        <div class="fact-number" data-target="68" data-suffix="%">0%</div>
+        <div class="fact-label" data-key="apartment_dwellers_stat_text">Eesti elanikest elab korterelamutes</div>
+      </div>
+      <div class="fact-card">
+        <div class="fact-number" data-target="10000" data-suffix="+">0</div>
+        <div class="fact-label" data-key="ev_count_estonia_text">elektriautot Eestis</div>
+      </div>
+      <div class="fact-card">
+        <div class="fact-number" data-target="15" data-suffix="%">0%</div>
+        <div class="fact-label" data-key="ev_growth_2024_2025_text">elektriautode kasv 2024-2025</div>
+      </div>
+      <div class="fact-card">
+        <div class="fact-number" data-target="25000" data-suffix="+">0</div>
+        <div class="fact-label" data-key="apartment_solution_needed_text">kortermaja vajab lahendust</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="sep"></div>
+
+  <!-- ── CALCULATOR ──────────────────────────────────── -->
+  <section id="calculator" class="reveal">
+    <div class="section-head">
+      <div class="section-eyebrow" data-key="calculator_eyebrow">Kalkulaator</div>
+      <h2 data-key="roi-calculator-title" class="section-title">
+        Kiire <span class="hero-accent">tasuvuskalkulaator</span>
+      </h2>
+    </div>
+    <div class="calc-card">
+      <div class="calc-columns">
+        <div class="calc-column">
+          <h3 data-key="calc_input_h">Sisendandmed</h3>
+          <div class="input-group"><label for="autoArv" data-key="calc_label_autos">Elektriautode arv ühistus</label><input type="number" id="autoArv" min="0" step="1" value="4" oninput="calculate()" inputmode="numeric"></div>
+          <div class="input-group"><label for="labisoit" data-key="calc_label_km">Läbisõit 1 auto kohta kuus (km)</label><input type="number" id="labisoit" min="0" step="1" value="1500" oninput="calculate()" inputmode="numeric"></div>
+          <div class="input-group"><label for="evKulu" data-key="calc_label_ev_eff">Elektriauto kulu (kWh/100km)</label><input type="number" id="evKulu" min="0" step="0.1" value="20" oninput="calculate()" inputmode="decimal"></div>
+          <div class="input-group"><label for="elekterHind" data-key="calc_label_el_price">Elektri lõpphind (€/kWh)</label><input type="number" id="elekterHind" min="0" step="0.01" value="0.16" oninput="calculate()" inputmode="decimal"></div>
+          <div class="input-group"><label for="iceKulu" data-key="calc_label_ice_eff">Vana auto kütusekulu (L/100km)</label><input type="number" id="iceKulu" min="0" step="0.1" value="5.5" oninput="calculate()" inputmode="decimal"></div>
+          <div class="input-group"><label for="kutuseHind" data-key="calc_label_fuel_price">Kütuse hind (€/L)</label><input type="number" id="kutuseHind" min="0" step="0.01" value="1.80" oninput="calculate()" inputmode="decimal"></div>
+        </div>
+        <div class="calc-column">
+          <h3 data-key="calc_res_h">Võrdlus ja tulemused</h3>
+          <div class="results-box">
+            <div class="comparison">
+              <div class="comp-card ev-card">
+                <span class="comp-title" data-key="calc_ev_cost_title">ELEKTRIAUTO KULU</span>
+                <span class="comp-val" id="resEvKuluKuu">0</span>
+                <small data-key="currency_per_month">€/kuu</small>
+              </div>
+              <div class="comp-card ice-card">
+                <span class="comp-title" data-key="calc_ice_cost_title">TAVA-AUTO KULU</span>
+                <span class="comp-val" id="resIceKuluKuu">0</span>
+                <small data-key="ice_cost_per_month">€/kuu</small>
+              </div>
+            </div>
+            <div class="output-item"><span data-key="calc_save_auto">Sääst 1 auto kohta kuus:</span><span class="display-value" id="resSaastAuto">0</span></div>
+            <div class="output-item"><span data-key="calc_save_ky">Sääst kogu KÜ kohta kuus:</span><span class="display-value" id="resSaastKu">0</span></div>
+            <div class="output-item"><span data-key="calc_invest">Investeering alates:</span><span class="display-value" id="resInvesteering">0</span></div>
+            <div class="highlight-box">
+              <span class="highlight-label" data-key="calc_payback_label">Hinnanguline tasuvusaeg</span>
+              <span class="highlight-value">
+                <span id="resTasuvus">0</span>
+                <span id="paybackMonthsSuffix" data-key="months"> kuud</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="sep"></div>
+
+  <!-- ── CONFIGURATOR ────────────────────────────────── -->
+  <section id="configurator" class="reveal" x-data="deviceCalculator()" x-on:language-changed.window="currentLang = $event.detail">
+    <div class="section-head">
+      <div class="section-eyebrow" data-key="configurator_eyebrow">Hinnapäring</div>
+      <h2 class="section-title" data-key="conf_title">
+        Loo oma <span class="hero-accent">lahendus</span>
+      </h2>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <div class="lg:col-span-2 space-y-6">
+        <div class="card">
+          <h3 data-key="house_equipment_title" class="text-xl font-bold mb-6 text-orange-400">Maja ja seadmete andmed</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+            <div>
+              <label data-key="installation_address_label" class="block text-xs font-medium mb-2 text-gray-400 uppercase tracking-wider">Paigalduse aadress</label>
+              <div class="address-input-wrap">
+                <input type="text" x-model="form.address" data-placeholder-key="installation_address_placeholder" placeholder="Tänav, maja, linn"
+                  class="w-full p-3 rounded-xl wexa-calc-input focus:outline-none"
+                  @input.debounce.300ms="fetchAddressSuggestions"
+                  @keydown.arrow-down.prevent="addrHighlight = Math.min(addrHighlight + 1, addrSuggestions.length - 1)"
+                  @keydown.arrow-up.prevent="addrHighlight = Math.max(addrHighlight - 1, 0)"
+                  @keydown.enter.prevent="addrHighlight >= 0 && selectAddress(addrSuggestions[addrHighlight])"
+                  @keydown.escape="addrSuggestions = []"
+                  @blur.debounce.150ms="addrSuggestions = []" autocomplete="off"/>
+                <div class="address-dropdown" x-show="addrSuggestions.length > 0" x-cloak>
+                  <template x-for="(s, idx) in addrSuggestions" :key="s.adr_id || idx">
+                    <div class="address-dropdown-item" :class="{'active-item': addrHighlight === idx}"
+                      @mousedown.prevent="selectAddress(s)" @mouseover="addrHighlight = idx">
+                      <span x-text="s.ipikkaadress || s.aadresstekst"></span>
+                    </div>
+                  </template>
+                </div>
+              </div>
+            </div>
+            <div>
+              <label data-key="conf_main_fuse_label" class="block text-xs font-medium mb-2 text-gray-400 uppercase tracking-wider">Maja peakaitse (A)</label>
+              <input type="number" x-model.number="form.peakaitse" min="0" class="w-full p-3 rounded-xl wexa-calc-input focus:outline-none">
+            </div>
+          </div>
+          <div class="space-y-2">
+            <template x-for="item in items" :key="item.id">
+              <div class="flex items-center justify-between py-4 border-b border-white/5">
+                <div>
+                  <div class="font-semibold text-white" x-text="getTranslatedItemName(item)"></div>
+                  <div class="text-xs text-gray-400 mt-0.5"><span data-key="conf_unit_price_label">Ühikuhind</span>: <span x-text="item.price"></span>€</div>
+                </div>
+                <div class="flex items-center space-x-3">
+                  <button @click="if(item.qty > 0) item.qty--" class="w-9 h-9 rounded-lg bg-white/5 text-white border border-white/10 cursor-pointer hover:bg-orange-500 hover:border-orange-500 transition-all duration-200 font-bold text-lg">−</button>
+                  <span class="w-8 text-center font-bold text-orange-400 text-xl tabular-nums" x-text="item.qty"></span>
+                  <button @click="item.qty++" class="w-9 h-9 rounded-lg bg-white/5 text-white border border-white/10 cursor-pointer hover:bg-orange-500 hover:border-orange-500 transition-all duration-200 font-bold text-lg">+</button>
+                </div>
+              </div>
+            </template>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3 data-key="installation_package_title" class="text-xl font-bold mb-2 text-orange-400">Paigalduspakett</h3>
+          <p data-key="distance_selection_text" class="text-sm text-gray-400 mb-5">Valige kaugus peakilbi ja esimese seadme vahel:</p>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+            <template x-for="pkg in packages" :key="pkg.id">
+              <div @click="selectedPackageId = pkg.id" :class="{'active': selectedPackageId === pkg.id}"
+                class="package-card p-4 flex flex-col items-start space-y-2">
+                <div class="radio-dot w-4 h-4 rounded-full flex items-center justify-center">
+                  <div class="w-2 h-2 rounded-full" :class="selectedPackageId === pkg.id ? 'bg-black' : 'bg-transparent'" x-show="selectedPackageId === pkg.id"></div>
+                </div>
+                <div class="font-bold text-sm" x-text="getTranslatedPackageName(pkg.id)"></div>
+                <div class="text-[10px] text-gray-400 uppercase tracking-wide"><span data-key="conf_base_label">Baas</span>: <span x-text="pkg.basePrice"></span>€</div>
+              </div>
+            </template>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="card card-glow" style="position:sticky; top:110px;">
+          <h3 data-key="conf_selected_solution_title" class="text-lg font-bold mb-5">Valitud lahendus</h3>
+          <div class="space-y-3 text-sm mb-6">
+            <div class="flex justify-between items-center text-gray-400">
+              <span data-key="conf_total_devices_label">Seadmeid kokku:</span>
+              <span class="text-white font-bold tabular-nums" x-text="totalQty"></span>
+            </div>
+            <div class="flex justify-between items-center text-gray-400">
+              <span data-key="conf_package_label">Pakett:</span>
+              <span class="text-white font-bold" x-text="selectedPackageName"></span>
+            </div>
+            <div class="pt-4 border-t border-white/5 flex justify-between items-end">
+              <span data-key="conf_estimated_cost_label" class="text-gray-400 text-sm">Orienteeruv maksumus:</span>
+              <div class="text-3xl font-black" style="background:linear-gradient(135deg,var(--accent),var(--accent-light));background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;">
+                <span x-text="seadmeteMaksumus + paigalduseMaksumus"></span>€
+              </div>
+            </div>
+          </div>
+
+<form id="configForm" action="https://api.web3forms.com/submit" method="POST" @submit.prevent="sendConfiguration" class="space-y-3">
+  
+  <input type="hidden" name="access_key" value="9033af9e-1cc3-4352-ace5-1dbbb32e3542">
+  <input type="hidden" name="from_name" value="WEXA website">
+  <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" class="wexa-honeypot" aria-hidden="true">
+
+  <input type="hidden" name="subject" value="Uus laadimissüsteemi kalkulatsioon - WEXA">
+
+  <input type="hidden" name="aadress" x-model="form.address">
+  <input type="hidden" name="peakaitse" x-model="form.peakaitse">
+  <input type="hidden" name="valitud_pakett" :value="selectedPackageName">
+  <input type="hidden" name="seadmeid_kokku" :value="totalQty">
+  <input type="hidden" name="kogumaksumus" :value="seadmeteMaksumus + paigalduseMaksumus + '€'">
+  <template x-for="item in items" :key="item.id">
+    <input type="hidden" :name="'toode_' + item.id" :value="getTranslatedItemName(item) + ': ' + item.qty + ' tk'">
+  </template>
+
+  <input type="text"  name="nimi"    x-model="form.name"    data-placeholder-key="conf_name_placeholder"    placeholder="Teie nimi" required class="w-full p-3 rounded-xl wexa-calc-input text-sm">
+  <input type="email" name="email"   x-model="form.email"   data-placeholder-key="conf_email_placeholder"   placeholder="E-post"    required class="w-full p-3 rounded-xl wexa-calc-input text-sm">
+  <input type="text"  name="telefon" x-model="form.phone"   data-placeholder-key="conf_phone_placeholder"   placeholder="Telefon"   required class="w-full p-3 rounded-xl wexa-calc-input text-sm">
+  <textarea name="lisainfo" x-model="form.message" data-placeholder-key="conf_message_placeholder" placeholder="Lisainfo..." class="w-full p-3 rounded-xl wexa-calc-input text-sm" rows="3"></textarea>
+
+  <button type="submit" :disabled="loading" class="btn btn-primary w-full justify-center">
+    <span x-text="loading ? getI18nText('conf_submit_loading_text','Saadan...') : getI18nText('conf_submit_button_text','Saada hinnapäring')"></span>
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 2L11 13M22 2L15 22l-4-9-9-4 20-7z"/></svg>
+  </button>
+  <p x-show="success" x-cloak data-key="conf_success_message" class="text-emerald-400 text-center text-xs mt-2">✓ Päring edukalt saadetud!</p>
+  <p x-show="error" x-cloak data-key="conf_error_message" class="text-red-400 text-center text-xs mt-2">Saatmine ebaõnnestus. Palun proovige uuesti.</p>
+</form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="sep"></div>
+
+  <!-- ── CONTACT ─────────────────────────────────────── -->
+  <section id="contact" class="reveal">
+    <div class="contact-container">
+    <div class="contact-copy">
+        <div class="section-eyebrow" data-key="contact_eyebrow">Kontakt</div>
+        <h2 data-key="contact_section_title" class="section-title">
+          Võta <span class="hero-accent">ühendust</span>
+        </h2>
+        <div class="contact-list">
+          <div class="contact-info-item">
+            <div class="contact-icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg>
+            </div>
+            <div>
+              <small data-key="contact_email_label" class="contact-label">E-mail</small>
+              <a href="mailto:info@wexa.ee">info@wexa.ee</a>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6.5 4.5h3l1.5 4-2 1.5a12 12 0 0 0 5 5l1.5-2 4 1.5v3A2 2 0 0 1 17.5 20 14.5 14.5 0 0 1 4 6.5 2 2 0 0 1 6.5 4.5z"/></svg>
+            </div>
+            <div>
+              <small data-key="contact_phone_label" class="contact-label">Telefon</small>
+              <a id="phone-link" href="tel:+37258666199" data-key="footer_phone">+372 5866 6199</a>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s7-5.4 7-11a7 7 0 1 0-14 0c0 5.6 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            </div>
+            <div>
+              <small data-key="contact_address_label" class="contact-label">Aadress</small>
+              <span>Sepise 1, 11415 Tallinn</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="map-wrapper">
+        <iframe
+          data-key="map_title" title="WEXA asukoht kaardil"
+          src="https://maps.google.com/maps?q=Sepise%201%2C%2011415%20Tallinn&amp;z=17&amp;output=embed"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <img src="logo-white.png" alt="WEXA logo">
+  <p style="color:var(--text-l); font-size:0.82rem; line-height:1.8;">
+    <span data-key="footer_copyright">© 2026 Wexa Technologies OÜ. Kõik õigused kaitstud.</span><br>
+    <span data-key="footer_quote" style="color:var(--border-h); font-style:italic;">"Lihtsus on ülim keerukus." – Leonardo da Vinci</span>
+  </p>
+</footer>
+<button id="backToTop" class="back-to-top" aria-label="Tagasi üles">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="18 15 12 9 6 15"></polyline>
+  </svg>
+</button>
+<dialog id="promo-lightbox" class="promo-lightbox" data-aria-key="lightbox_dialog" aria-label="Suurendatud foto">
+  <button type="button" class="promo-lightbox__close" data-aria-key="lightbox_close" aria-label="Sulge">&times;</button>
+  <img alt="" class="promo-lightbox__image">
+</dialog>
+<script src="script.js?v=23" defer></script>
+<script defer src="https://unpkg.com/alpinejs@3.14.1/dist/cdn.min.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    corePlugins: { preflight: false },
+    theme: {
+      extend: {
+        colors: { accent: '#ff7a1a' },
+        fontFamily: {
+          sans: ['"Plus Jakarta Sans"', 'Segoe UI', 'sans-serif']
+        }
+      }
+    }
+  }
+</script>
+</body>
+</html>

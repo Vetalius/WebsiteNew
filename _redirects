@@ -1,0 +1,6 @@
+/app/api/elering-nps  https://us-central1-wexa-9401f.cloudfunctions.net/eleringNpsProxy  200
+/demo/app/api/elering-nps  https://us-central1-wexa-9401f.cloudfunctions.net/eleringNpsProxy  200
+/app    /app/             301
+/demo   /demo/            301
+# SPA fallback is handled by _worker.js only.
+# Do NOT add /app/* or /demo/app/* -> index.html here — it poisons assets/*.js cache.
